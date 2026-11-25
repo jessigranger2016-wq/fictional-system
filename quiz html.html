@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quiz-App · Marketing-Mix</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="karte">
+
+  <section id="start">
+    <h1>Quiz: Marketing-Mix</h1>
+    <p>10 Fragen zu Kommunikationsregeln, den 4 Ps und Kundenzufriedenheit. Pro Frage gibt es genau eine richtige Antwort.</p>
+    <button class="btn" id="startBtn">Quiz starten</button>
+  </section>
+
+  <section id="quiz" class="versteckt">
+    <div class="kopf">
+      <span id="fragenZaehler">Frage 1 von 10</span>
+      <span id="punkteAnzeige">Punkte: 0</span>
+    </div>
+
+    <div class="balken">
+      <div class="fortschritt" id="fortschritt"></div>
+    </div>
+
+    <h2 id="frageText"></h2>
+    <div class="antworten" id="antworten"></div>
+    <div class="feedback" id="feedback"></div>
+    <button class="btn versteckt" id="weiterBtn">Weiter</button>
+  </section>
+
+  <section id="ergebnis" class="versteckt">
+    <h1>Dein Ergebnis</h1>
+    <div class="punkte" id="endPunkte"></div>
+    <p class="prozent" id="endProzent"></p>
+    <p class="bewertung" id="endBewertung"></p>
+
+    <div id="fehlerBereich">
+      <strong>Das solltest du nochmal ansehen:</strong>
+      <ol class="fehlerliste" id="fehlerListe"></ol>
+    </div>
+
+    <button class="btn" id="neuBtn">Nochmal spielen</button>
+  </section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
