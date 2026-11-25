@@ -1,0 +1,164 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #eaf1fa;
+  color: #1f3a5f;
+  padding: 16px;
+}
+
+.karte {
+  background: #fff;
+  width: 100%;
+  max-width: 560px;
+  border-radius: 14px;
+  padding: 24px;
+  box-shadow: 0 4px 18px rgba(31, 58, 95, .15);
+}
+
+h1 {
+  margin: 0 0 6px;
+  font-size: 1.5rem;
+}
+
+h2 {
+  margin: 0 0 16px;
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+p {
+  line-height: 1.5;
+}
+
+.versteckt {
+  display: none;
+}
+
+.kopf {
+  display: flex;
+  justify-content: space-between;
+  font-size: .9rem;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.balken {
+  height: 8px;
+  background: #dde6f2;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 18px;
+}
+
+.fortschritt {
+  height: 100%;
+  width: 0;
+  background: #4f81bd;
+  transition: width .3s;
+}
+
+.antworten {
+  display: grid;
+  gap: 10px;
+}
+
+.antwort {
+  text-align: left;
+  padding: 12px 14px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: 2px solid #c5d3e6;
+  border-radius: 10px;
+  background: #fff;
+  color: inherit;
+}
+
+.antwort:hover:not(:disabled) {
+  border-color: #4f81bd;
+  background: #f3f7fc;
+}
+
+.antwort:disabled {
+  cursor: default;
+}
+
+.antwort.richtig {
+  background: #e3f4df;
+  border-color: #5aa84b;
+}
+
+.antwort.falsch {
+  background: #fbe3e1;
+  border-color: #d1564b;
+}
+
+.feedback {
+  min-height: 24px;
+  margin: 14px 0 6px;
+  font-weight: bold;
+}
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  background: #1f3a5f;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+}
+
+.btn:hover {
+  background: #2c4f7f;
+}
+
+.btn:focus-visible,
+.antwort:focus-visible {
+  outline: 3px solid #4f81bd;
+  outline-offset: 3px;
+}
+
+.punkte {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 8px 0 0;
+}
+
+.prozent {
+  text-align: center;
+  color: #555;
+  margin: 0 0 6px;
+}
+
+.bewertung {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 18px;
+}
+
+.fehlerliste {
+  padding-left: 18px;
+  margin: 8px 0 20px;
+}
+
+.fehlerliste li {
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.klein {
+  font-size: .9rem;
+  color: #555;
+}
